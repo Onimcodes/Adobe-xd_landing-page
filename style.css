@@ -250,6 +250,9 @@ padding:0 20px;
     text-decoration:none;
 
 }
+.google-badges{
+    display:none;
+}
 .Google{
     display:none;
    
@@ -269,6 +272,7 @@ padding:0 20px;
 .b-0{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px;
     justify-items: space-between;
     width:100%;
 
@@ -351,25 +355,33 @@ padding:0 20px;
     text-decoration:none;
     
 }
+.google-badges{
+    display:block;
+    background:#eee;
+    margin: 20px auto;
+    width:90%;
+    padding:20px;
+    /* height:100px; */
+}
 .Google{
     display:flex;
     margin:20px auto;
     width:90%;
     justify-content: center;
     align-items: center;
+    gap:10px;
+    flex-wrap:wrap;
+
     /* grid-template-columns: repeat(3, 33.33%);
     grid-template-rows:200px;
     width:90%;
     margin: 20px auto ;
     justify-items:space-around;
     align-items: center; */
-    background:rgba(0, 0, 0, 0.4);
+    /* background:rgba(0, 0, 0, 0.4); */
     /* font-size:12px; */
 }
-.Google .badge1{
-    
-/* display:flex; */
-}
+
 
 }
 @media(max-width:600px){
@@ -384,16 +396,21 @@ padding:0 20px;
     .base-nav{
         margin:0 auto;
     }
+    .content{
+        grid-gap:10px;
+        margin-top:50px;
+    }
     .content p{
-        font-size:16px;
+        font-size:14px;
     }
     content h3{
-        font-size:20px;
+        font-size:16px;
 
     }
     .buttons{
         flex-direction:column;
         margin:0;
+        
 
     }
     .button1{
