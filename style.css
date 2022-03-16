@@ -526,6 +526,7 @@ text-decoration:none;
    display:grid;
    grid-template-columns: repeat(3, 33.3%);
    justify-items: center;
+   justify-content:center;
    width:70%;
    margin:0 auto;
    align-items: center;
@@ -535,10 +536,16 @@ text-decoration:none;
 }
 .powerful{
     display:grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr); 
+    justify-content:space-between;
     width:80%;
-    margin:100px auto;
+    margin:200px auto;
+    /* height:80vh; */
 
+}
+.powerful p{
+    width:70%;
+    
 }
 .note{
     display:flex;
@@ -559,7 +566,8 @@ text-decoration:none;
     display:flex;
     width:80%;
     margin:100px auto;
-    justify-content: space-around;
+    justify-content: space-between;
+
 }
 .fuel{
     display:flex;
@@ -688,8 +696,8 @@ margin-top:0;
 .comp-2{
     display:flex;
     flex-direction: column;
-    border-top:1px solid black;
-    border-bottom: 1px solid  black;
+    border-top:1px solid #4B4B4B;
+    border-bottom: 1px solid  #4B4B4B;
     padding:5px;
     width:100px;
 
@@ -1003,6 +1011,13 @@ button{
    .copyright{
        width:80%;
    } */
+   .fuel h3 {
+       text-align: right;
+
+   }
+   .fuel p {
+       text-align: right;
+   }
   
     .socials{
         margin-top:20px;
@@ -1179,7 +1194,7 @@ button{
       .behance{
           flex-direction:column;
           /* margin:30px 0; */
-          gap:30px;
+          /* gap:30px; */
       }
      
       .fuel h3{
@@ -1293,6 +1308,24 @@ button{
         text-decoration:none;
         color:white;
     }
+    .btns{
+        width:100%;
+        flex-direction:column;
+    }
+    .powerful{
+        margin:50px auto;
+        gap:20px;
+    }
+    .behance{
+        gap:50px;
+    }
+   
+    .btns-2{
+        width:80%;
+        margin:0 auto;
+    }
+    
 }
+
 
 
